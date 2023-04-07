@@ -16,38 +16,38 @@
 #include <iostream>
 using namespace std;
 
-void input(int arr[], int n) {
+void input(int FASYA[], int n) {
 	cout << "Enter " << n << " Number :\n";
 	for (int i = 0; i < n; i++) {
-		cin >> arr[i];
+		cin >> FASYA[i];
 	}
 }
 
-void selectionSort(int arr[], int n) {
+void selectionSort(int FASYA[], int n) {
 	for (int AF = 0; AF <= n - 2; AF++) {
 		int min_index = AF;
 		for (int i = AF + 1; i < n; i++) {
-			if (arr[i] < arr[min_index]) {
+			if (FASYA[i] < FASYA[min_index]) {
 				min_index = i;
 			}
 		}
-		int temp = arr[AF];
-		arr[AF] = arr[min_index];
-		arr[min_index] = temp;
+		int temp = FASYA[AF];
+		FASYA[AF] = FASYA[min_index];
+		FASYA[min_index] = temp;
 	}
 }
 
-void display(int arr[], int n) {
+void display(int FASYA[], int n) {
 	cout << "Data terurut :\n";
 	for (int i = 0; i < n; i++) {
-		cout << arr[i] << " ";
+		cout << FASYA[i] << " ";
 	}
 	cout << endl;
 }
 
 int main() {
 	const int MAX = 97;				//77+20-2*15+10+20 = 97
-	int arr[MAX];
+	int FASYA[MAX];
 	int n;
 
 	cout << "Masukkan jumlah data : ";
@@ -56,9 +56,9 @@ int main() {
 		cout << "Jumlah data terlalu banyak, masukkan ulang : ";
 		cin >> n;
 	}
-	input(arr, n);
-	selectionSort(arr, n);
-	display(arr, n);
+	input(FASYA, n);
+	selectionSort(FASYA, n);
+	display(FASYA, n);
 
 	return 0;
 }
