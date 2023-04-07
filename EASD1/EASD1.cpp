@@ -45,3 +45,17 @@ void display(int arr[], int n) {
 	cout << endl;
 }
 
+int main() {
+	const int MAX = 97;				//77+20-2*15+10+20 = 97
+	int arr[MAX];
+	int n;
+
+	cout << "Masukkan jumlah data : ";
+	cin >> n;
+	while (n > MAX) {
+		cout << "Jumlah data terlalu banyak, masukkan ulang : ";
+		cin >> n;
+	}
+	input(arr, n);
+	
+}
