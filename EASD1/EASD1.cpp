@@ -17,7 +17,7 @@
 using namespace std;
 
 void input(int arr[], int n) {
-	cout << "Enter" << n << "Number :\n";
+	cout << "Enter " << n << " Number :\n";
 	for (int i = 0; i < n; i++) {
 		cin >> arr[i];
 	}
@@ -57,5 +57,8 @@ int main() {
 		cin >> n;
 	}
 	input(arr, n);
-	
+	selectionSort(arr, n);
+	display(arr, n);
+
+	return 0;
 }
