@@ -10,3 +10,8 @@
 
 // 5.	a. Quadratic = selection sort, insertion sort, bubble sort
 //		b. Loglinear = merge sort dan quick sort
+
+//6
+
+#include <iostream>
+using namespace std;
