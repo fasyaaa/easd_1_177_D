@@ -39,5 +39,9 @@ void selectionSort(int arr[], int n) {
 
 void display(int arr[], int n) {
 	cout << "Data terurut :\n";
-	for (int )
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 }
+
