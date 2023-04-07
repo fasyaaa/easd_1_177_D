@@ -31,5 +31,13 @@ void selectionSort(int arr[], int n) {
 				min_index = i;
 			}
 		}
+		int temp = arr[AF];
+		arr[AF] = arr[min_index];
+		arr[min_index] = temp;
 	}
+}
+
+void display(int arr[], int n) {
+	cout << "Data terurut :\n";
+	for (int )
 }
