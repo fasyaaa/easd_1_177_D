@@ -24,5 +24,12 @@ void input(int arr[], int n) {
 }
 
 void selectionSort(int arr[], int n) {
-
+	for (int AF = 0; AF <= n - 2; AF++) {
+		int min_index = AF;
+		for (int i = AF + 1; i < n; i++) {
+			if (arr[i] < arr[min_index]) {
+				min_index = i;
+			}
+		}
+	}
 }
